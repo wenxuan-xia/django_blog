@@ -26,7 +26,7 @@ class BlogListView(ListView):
     # 只显示状态为发布且公开的文章列表
     queryset = Blog.objects.filter(status='p', is_public=True)
     template_name = 'post_list.html'
-    paginate_by = settings.PAGE_SIZE
+    paginate_by = 5
     ordering = "-publish_time"
     context_object_name = "blogs"
 

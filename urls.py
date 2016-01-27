@@ -24,5 +24,4 @@ urlpatterns = patterns('',
                            lambda r: HttpResponse("User-agent: *\nDisallow: /admin/\nSitemap: <http://foofish.net/sitemap.xml>", content_type="text/plain")),
                        url(r'^baidu_verify_3ymtDfPE09.html', 'apps.blog.views.baidu', name='baidu'),
                        url(r'^rss/', LatestPosts(), name='feeds'),
-
                        )

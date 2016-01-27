@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 {% load myapp_markup %}
-{% block description %}FooFish的念,Bloger,Enginner{%endblock%}
-{% block title %}FooFish的笔录{% endblock %}
-{%block body_class %} home-template {% endblock %}
+{% block description %}{%endblock%}
+{% block title %}Nivlek0 {% endblock %}
+{%block body_class %}{% endblock %}
 {% load staticfiles %}
 {% block head %}
 
 <header class="main-header" style="background-image: url({% static 'img/home-bg.jpg' %})">
-
     {% include "widget/main-nav.html" %}
     <div class="vertical">
         <div class="main-header-content inner">
-            <h1 class="page-title">life is short</h1>
-<h1 class="page-title">tomorrow is not promised</h1>
+            <h1 class="page-title">Keep Calm</h1>
+            <h1 class="page-title">and</h1>
+<h1 class="page-title">Do more</h1>
         </div>
     </div>
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
